@@ -13,13 +13,13 @@
     <section class="skills">
       <h2>Skills</h2>
       <ul>
-        <li v-for="(skill, index) in skills" :key="skill" data-aos="fade-right" :data-aos-delay="index * 200" >{{ skill }}</li>
+        <li v-for="(skill, index) in skills" :key="skill" data-aos="fade-right" :data-aos-delay="index * 100" >{{ skill }}</li>
       </ul>
     </section>
     <section class="projects">
       <h2>Projects</h2>
       <div class="project-gallery">
-        <div v-for="project in projects" :key="project.id" class="project">
+        <div v-for="project in projects" :key="project.id" class="project" data-aos="zoom-in">
           <img :src="project.image" :alt="project.title" />
           <h3>{{ project.title }}</h3>
           <p>{{ project.description }}</p>

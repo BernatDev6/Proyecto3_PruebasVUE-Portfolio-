@@ -33,5 +33,13 @@
   nav a.router-link-active {
     font-weight: bold;
   }
+
+  nav {
+  padding: 20px;
+  }
+
+  nav a.router-link-exact-active {
+    color: var(--primary-color);
+  }
   </style>
   

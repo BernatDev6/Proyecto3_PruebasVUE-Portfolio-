@@ -1,3 +1,15 @@
+@font-face {
+  font-family: 'TitleFont';
+  src: url('../public/assets/fonts/Notera2PersonalUseOnlyLight-maBV.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Definir variables globales en :root */
+:root {
+  --primary-color: #42b983;
+}
+
 *{
     padding: 0;
     margin: 0;

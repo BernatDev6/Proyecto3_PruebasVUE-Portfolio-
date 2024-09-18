@@ -29,6 +29,7 @@
     bottom: 2%;
     right: 2%; 
     cursor: pointer;
+    z-index: 100;
   }
   i {
     display: flex;

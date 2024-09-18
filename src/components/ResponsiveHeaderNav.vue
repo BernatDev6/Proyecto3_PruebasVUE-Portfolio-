@@ -1,31 +1,34 @@
-<!-- src/components/ResponsiveNavbar.vue -->
 <template>
-    <header>
-      <nav class="navbar justify-content-end bg-dark-blur">
-        <div class="px-3 d-flex justify-content-end">
+  <header>
+    <nav class="navbar justify-content-between bg-dark-blur">
 
-            <button class="toggle-button" type="button" @click="toggleMenu">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-  
-          <!-- Menú colapsable -->
-            <div class="menu" v-show="isMenuOpen">
-                <ul class="navbar-nav d-flex flex-column align-items-center">
-                    <li class="nav-item my-2">
-                        <router-link to="/" class="nav-link" @click="closeMenu">Home</router-link>
-                    </li>
-                    <li class="nav-item my-2">
-                        <router-link to="/about" class="nav-link" @click="closeMenu">About</router-link>
-                    </li>
-                    <li class="nav-item my-2">
-                        <router-link to="/projects" class="nav-link" @click="closeMenu">Projects</router-link>
-                    </li>
-                </ul>
-            </div>
+      <div class="px-3 d-flex align-items-center">
+        <span class="navbar-brand title">Bernat Font</span>
+      </div>
+
+      <div class="px-3 d-flex justify-content-end">
+        <button class="toggle-button" type="button" @click="toggleMenu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <div class="menu" v-show="isMenuOpen">
+          <ul class="navbar-nav d-flex flex-column align-items-center">
+            <li class="nav-item my-2">
+              <router-link to="/" class="nav-link" @click="closeMenu">Home</router-link>
+            </li>
+            <li class="nav-item my-2">
+              <router-link to="/about" class="nav-link" @click="closeMenu">About</router-link>
+            </li>
+            <li class="nav-item my-2">
+              <router-link to="/projects" class="nav-link" @click="closeMenu">Projects</router-link>
+            </li>
+          </ul>
         </div>
-      </nav>
-    </header>
-  </template>
+      </div>
+    </nav>
+  </header>
+</template>
+
   
   <script setup>
   import { ref } from 'vue';
@@ -45,11 +48,18 @@
   </script>
   
   <style scoped>
+  /* Estilos del titulo */
+  .title{
+    font-size: 36px;
+    font-family: 'TitleFont', sans-serif;
+    color: var(--primary-color);
+  }
+
   /* Estilos del fondo con blur */
   .bg-dark-blur {
-    background-color: #333; /* Color con opacidad */
-    backdrop-filter: blur(10px); /* Efecto de desenfoque */
-    -webkit-backdrop-filter: blur(10px); /* Compatibilidad con Safari */
+    background-color: #333; 
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
   }
   
   /* Estilo del icono de hamburguesa */
@@ -61,7 +71,7 @@
   }
   
   i {
-    color: #42b983;
+    color: var(--primary-color);
     font-size: 30px
   }
   
@@ -72,7 +82,7 @@
     top: 100%;
     left: 0;
     width: 100%;
-    z-index: 1000;
+    z-index: -1;
   }
   
   .menu li {

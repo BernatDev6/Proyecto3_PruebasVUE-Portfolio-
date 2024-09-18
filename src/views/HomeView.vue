@@ -1,11 +1,10 @@
-<!-- src/views/Home.vue -->
 <template>
-  <div>
-    <h1>Welcome to My Portfolio</h1>
-    <p>This is the home page.</p>
-  </div>
+  <HeroSection />
+  <SecondSection />
 </template>
 
 <script setup>
-// No se necesita JavaScript adicional por ahora
+import HeroSection from '@/components/HomeSections/HeroSection.vue';
+import SecondSection from '@/components/HomeSections/SecondSection.vue';
 </script>
+

@@ -1,12 +1,15 @@
 <template>
-  <div>
+  <header>
     <HeaderNav v-if="isDesktop" />
     <ResponsiveHeaderNav v-else />
-  </div>
+  </header>
   <main>
     <router-view></router-view>
     <WhatsappButton />
   </main>
+  <footer>
+    
+  </footer>
 </template>
 
 <script setup>
@@ -39,22 +42,17 @@ onUnmounted(() => {
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #474747;
 }
 
-nav {
-  padding: 20px;
+header{
+  position: relative;
+  z-index: 2;
 }
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
+main{
+  position: relative;
+  z-index: 1;
 }
 </style>
