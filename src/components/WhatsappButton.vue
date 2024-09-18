@@ -26,8 +26,8 @@
   <style scoped>
   button {
     position: fixed;
-    top: 25%;
-    left: 50%; 
+    bottom: 2%;
+    right: 2%; 
     cursor: pointer;
   }
   i {

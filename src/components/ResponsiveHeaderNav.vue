@@ -12,13 +12,13 @@
             <div class="menu" v-show="isMenuOpen">
                 <ul class="navbar-nav d-flex flex-column align-items-center">
                     <li class="nav-item my-2">
-                        <router-link to="/" class="nav-link">Home</router-link>
+                        <router-link to="/" class="nav-link" @click="closeMenu">Home</router-link>
                     </li>
                     <li class="nav-item my-2">
-                        <router-link to="/about" class="nav-link">About</router-link>
+                        <router-link to="/about" class="nav-link" @click="closeMenu">About</router-link>
                     </li>
                     <li class="nav-item my-2">
-                        <router-link to="/projects" class="nav-link">Projects</router-link>
+                        <router-link to="/projects" class="nav-link" @click="closeMenu">Projects</router-link>
                     </li>
                 </ul>
             </div>
@@ -37,6 +37,11 @@
   const toggleMenu = () => {
     isMenuOpen.value = !isMenuOpen.value;
   };
+  
+  // Función para cerrar el menú
+  const closeMenu = () => {
+    isMenuOpen.value = false;
+  };
   </script>
   
   <style scoped>
@@ -52,11 +57,12 @@
     align-self: flex-end;
     border: none;
     background: transparent;
-    padding: 0;
+    padding: 8px;
   }
   
   i {
     color: #42b983;
+    font-size: 30px
   }
   
   /* Estilos del menú colapsable */
