@@ -1,8 +1,8 @@
-<!-- src/views/About.vue -->
+<!-- src/views/Projects.vue -->
 <template>
     <div>
-      <h1>About Me</h1>
-      <p>This is the about page.</p>
+      <h1>My Projects</h1>
+      <p>This is the projects page.</p>
     </div>
   </template>
   

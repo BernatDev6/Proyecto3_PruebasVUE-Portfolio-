@@ -1,0 +1,37 @@
+<!-- src/components/Header.vue -->
+<template>
+    <header>
+      <nav>
+        <ul class="m-0 d-flex justify-content-center align-items-center">
+          <li><router-link to="/">Home</router-link></li>
+          <li><router-link to="/about">About</router-link></li>
+          <li><router-link to="/projects">Projects</router-link></li>
+        </ul>
+      </nav>
+    </header>
+  </template>
+  
+  <script setup>
+  // No se necesita JavaScript adicional por ahora
+  </script>
+  
+  <style scoped>
+  header {
+    background-color: #333;
+  }
+  
+  nav ul {
+    list-style: none;
+    gap: 2rem;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  nav a.router-link-active {
+    font-weight: bold;
+  }
+  </style>
+  

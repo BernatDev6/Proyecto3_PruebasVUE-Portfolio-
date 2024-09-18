@@ -1,10 +1,40 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <div>
+    <HeaderNav v-if="isDesktop" />
+    <ResponsiveHeaderNav v-else />
+  </div>
+  <main>
+    <router-view></router-view>
+    <WhatsappButton />
+  </main>
 </template>
+
+<script setup>
+import { ref, onMounted, onUnmounted } from 'vue';
+import HeaderNav from './components/HeaderNav.vue';
+import ResponsiveHeaderNav from './components/ResponsiveHeaderNav.vue';
+import WhatsappButton from './components/WhatsappButton.vue';
+
+const isDesktop = ref(false);
+
+// Function to update the screen size
+const updateScreenSize = () => {
+  // Check for the Bootstrap 'md' breakpoint (768px)
+  isDesktop.value = window.innerWidth >= 768; // 'md' breakpoint
+};
+
+// Set up the event listener on mount
+onMounted(() => {
+  updateScreenSize();
+  window.addEventListener('resize', updateScreenSize);
+});
+
+// Clean up the event listener when the component is unmounted
+onUnmounted(() => {
+  window.removeEventListener('resize', updateScreenSize);
+});
+</script>
+
 
 <style>
 #app {
@@ -16,7 +46,7 @@
 }
 
 nav {
-  padding: 30px;
+  padding: 20px;
 }
 
 nav a {
