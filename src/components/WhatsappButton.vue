@@ -7,8 +7,8 @@
   <script setup>
   import { ref } from 'vue';
   
-  // Número de teléfono de la psicóloga en formato internacional
-  const phoneNumber = ref('663888740'); // Reemplaza con el número real, ej: 5491123456789 para Argentina
+  // Número de teléfono en formato internacional
+  const phoneNumber = ref('654636920'); 
   
   // Mensaje predeterminado
   const defaultMessage = ref('Hola, me gustaría agendar una cita.'); // Personaliza este mensaje
@@ -25,13 +25,10 @@
   
   <style scoped>
   button {
-    position: fixed; /* Fija el botón en la pantalla */
-    top: 25%; /* Margen desde la parte superior */
-    left: 50%; /* Margen desde la parte derecha */
-    border: none;
-    background-color: transparent; /* Fondo transparente */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-    z-index: 1000; /* Asegura que el botón esté por encima de otros elementos */
+    position: fixed;
+    top: 25%;
+    left: 50%; 
+    cursor: pointer;
   }
   i {
     display: flex;
