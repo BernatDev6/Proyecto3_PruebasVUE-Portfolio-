@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'TitleFont';
+    src: url('@/assets/fonts/Notera2PersonalUseOnlyLight-maBV.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// Colores
+$primary-color: #2ecc71;
+$secondary-color: #f7e3ac;
+
+// Tipografías
+$base-font-size: 16px;
+$font-stack: 'Roboto', sans-serif;
+
+// Espaciados
+$spacing-unit: 16px;
+$container-padding: 20px;

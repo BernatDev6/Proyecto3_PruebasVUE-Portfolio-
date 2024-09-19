@@ -12,7 +12,7 @@
     </div>
   </template>
   
-  <style scoped>
+  <style scoped lang="scss">
   .hero-section {
     position: relative;
     background-image: url('../../../public/assets/images/p3.jpg');
@@ -54,7 +54,7 @@
     padding: 8px 20px;
     border-radius: 8px;
     cursor: pointer;
-    background-color: var(--primary-color);
+    background-color: $primary-color;
   }
   </style>
   

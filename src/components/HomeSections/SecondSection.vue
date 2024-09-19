@@ -24,23 +24,23 @@ const handleClick = () => {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
   section{
-    background-color: var(--secondary-color);
+    background-color: $secondary-color;
   }
 
   button{
-    border: 1px solid var(--primary-color);
+    border: 1px solid $primary-color;
     padding: 8px 16px;
     border-radius: 8px;
-    color: var(--primary-color);
+    color: $primary-color;
     background-color: #ffffff00;
   }
 
   button:hover{
-    color: var(--secondary-color);
-    border: 1px solid var(--secondary-color);
-    background: var(--primary-color)
+    color: $secondary-color;
+    border: 1px solid $secondary-color;
+    background: $primary-color
 
   }
 

@@ -47,12 +47,12 @@
   };
   </script>
   
-  <style scoped>
+  <style scoped lang="scss">
   /* Estilos del titulo */
   .title{
     font-size: 36px;
     font-family: 'TitleFont', sans-serif;
-    color: var(--primary-color);
+    color: $primary-color;
   }
 
   /* Estilos del fondo con blur */
@@ -71,7 +71,7 @@
   }
   
   i {
-    color: var(--primary-color);
+    color: $primary-color;
     font-size: 30px
   }
   

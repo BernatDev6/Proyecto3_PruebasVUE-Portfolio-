@@ -15,7 +15,7 @@
   // No se necesita JavaScript adicional por ahora
   </script>
   
-  <style scoped>
+  <style scoped lang="scss">
   header {
     background-color: #333;
   }
@@ -39,7 +39,7 @@
   }
 
   nav a.router-link-exact-active {
-    color: var(--primary-color);
+    color: $primary-color;
   }
   </style>
   
