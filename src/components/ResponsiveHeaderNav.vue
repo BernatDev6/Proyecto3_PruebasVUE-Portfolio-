@@ -14,13 +14,16 @@
         <div class="menu" v-show="isMenuOpen">
           <ul class="navbar-nav d-flex flex-column align-items-center">
             <li class="nav-item my-2">
-              <router-link to="/" class="nav-link" @click="closeMenu">Home</router-link>
+              <router-link :to="{name: 'home'}" class="nav-link" @click="closeMenu">Home</router-link>
             </li>
             <li class="nav-item my-2">
-              <router-link to="/about" class="nav-link" @click="closeMenu">About</router-link>
+              <router-link :to="{name: 'about'}" class="nav-link" @click="closeMenu">About</router-link>
             </li>
             <li class="nav-item my-2">
-              <router-link to="/projects" class="nav-link" @click="closeMenu">Projects</router-link>
+              <router-link :to="{name: 'projects'}" class="nav-link" @click="closeMenu">Projects</router-link>
+            </li>
+            <li class="nav-item my-2">
+              <router-link :to="{name: 'contact'}" class="nav-link" @click="closeMenu">Contact</router-link>
             </li>
           </ul>
         </div>
@@ -48,12 +51,6 @@
   </script>
   
   <style scoped lang="scss">
-  /* Estilos del titulo */
-  .title{
-    font-size: 36px;
-    font-family: 'TitleFont', sans-serif;
-    color: $primary-color;
-  }
 
   /* Estilos del fondo con blur */
   .bg-dark-blur {
