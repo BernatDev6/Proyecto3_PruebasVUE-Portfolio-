@@ -7,7 +7,7 @@
       <div class="hero-content">
         <h1>Descubre Nuestros Servicios</h1>
         <p>Ofrecemos soluciones innovadoras para tus necesidades.</p>
-        <button class="cta-button">Contáctanos</button>
+        <router-link class="cta-button" :to="{name: 'contact'}">Contáctanos</router-link>
       </div>
     </div>
   </template>
@@ -50,11 +50,12 @@
   .cta-button {
     border: none;
     color: white;
-    font-size: 20px;
-    padding: 8px 20px;
+    font-size: 24px;
+    padding: 10px 20px;
     border-radius: 8px;
     cursor: pointer;
     background-color: $primary-color;
+    text-decoration: none;
   }
   </style>
   

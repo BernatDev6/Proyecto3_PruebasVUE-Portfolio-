@@ -7,6 +7,7 @@
           <li><router-link :to="{name: 'about'}">About</router-link></li>
           <li><router-link :to="{name: 'projects'}">Projects</router-link></li>
           <li><router-link :to="{name: 'contact'}">Contact</router-link></li>
+          <li><router-link :to="{name: 'bootstrapComp'}">Bootstrap Comp.</router-link></li>
         </ul>
       </nav>
     </header>

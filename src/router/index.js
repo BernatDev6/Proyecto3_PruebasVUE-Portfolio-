@@ -5,6 +5,8 @@ import Home from '../views/HomeView.vue';
 import About from '../views/AboutView.vue';
 import Projects from '../views/ProjectsView.vue';
 import Contact from '../views/ContactView.vue';
+import BootstrapComp from '@/views/BootstrapComp.vue';
+
 
 const routes = [
   { 
@@ -26,6 +28,11 @@ const routes = [
     path: '/contact',
     component: Contact,
     name: 'contact'
+  },
+  { 
+    path: '/bootstrapComp',
+    component: BootstrapComp,
+    name: 'bootstrapComp'
   }
 ];
 

@@ -25,6 +25,9 @@
             <li class="nav-item my-2">
               <router-link :to="{name: 'contact'}" class="nav-link" @click="closeMenu">Contact</router-link>
             </li>
+            <li class="nav-item my-2">
+              <router-link :to="{name: 'bootstrapComp'}" class="nav-link" @click="closeMenu">Bootstrap Comp.</router-link>
+            </li>
           </ul>
         </div>
       </div>

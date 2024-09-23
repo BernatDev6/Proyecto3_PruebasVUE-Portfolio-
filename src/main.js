@@ -6,7 +6,8 @@ import 'bootstrap';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'aos/dist/aos.css'; // Importamos AOS y los estilos CSS necesarios para que funcione.
 import AOS from 'aos';
-const app = createApp(App)
+
+const app = createApp(App);
 
 app.use(router)
 
