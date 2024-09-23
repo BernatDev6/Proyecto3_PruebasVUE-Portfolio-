@@ -1,4 +1,5 @@
 <template>
+  <section class="p-4">
     <form ref="formRef" @submit.prevent="sendEmail">
         <label>Name</label>
         <input type="text" name="user_name" v-model="form.user_name" maxlength="20" />
@@ -11,6 +12,7 @@
         <input type="submit" value="Enviar" />
         <p v-if="errorMessage" class="error">{{ errorMessage }}</p>
     </form>
+  </section>
 </template>
 
 <script setup>
